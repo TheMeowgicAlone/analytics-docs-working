@@ -12,6 +12,7 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
+  - Credits: credits.md
   - Strategy:
       - Platform Roadmap: strategy/platform-roadmap.md
       - Data Governance: strategy/data-governance.md

@@ -2,6 +2,13 @@
 
 Welcome to the documentation hub for Salt Free Gaming (SFG), a Discord-centered community focused on Dota 2 and other titles. This site is the entrypoint for understanding how our Business Intelligence (BI) platform is planned, built, and operated.
 
+## Credits
+Salt Free Gaming's analytics platform is led by a small set of committed contributors:
+- **John C. Quinn** — Project Manager
+- **Gavin Chen** — Business Intelligence Engineer (Volunteer)
+
+See [Credits](credits.md) for how we recognize and engage these leaders.
+
 ## Purpose
 - Provide a single source of truth for Apache Superset dashboards, Grafana logging, data pipelines, and governance.
 - Equip the Business Owner (project manager), the Analytics Engineer (M.S. Business Analytics & AI candidate), and contributors with actionable guidance.
