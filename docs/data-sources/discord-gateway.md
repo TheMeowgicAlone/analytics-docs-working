@@ -1,6 +1,6 @@
 # Discord Gateway API
 
-The Discord Gateway API is the primary ingress for player behavior and engagement signals. Use it to map community events to analytics-ready datasets.
+The Discord Gateway API is the primary ingress for player behavior and engagement signals. Although Superset does not interact with it directly, understanding what it exposes explains much of what is available.
 
 ## Key Event Types
 - **Guild & Channel**: `GUILD_CREATE`, `CHANNEL_CREATE`, `CHANNEL_UPDATE`

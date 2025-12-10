@@ -13,18 +13,24 @@ theme:
 nav:
   - Home: index.md
   - Credits: credits.md
-  - Strategy:
-      - Platform Roadmap: strategy/platform-roadmap.md
-      - Data Governance: strategy/data-governance.md
   - Project Management:
-      - Delivery Methodology: project-management/methodology.md
       - Roles & Collaboration: project-management/roles.md
+      - Dashboard Workflows: project-management/dashboard-workflows.md
+      - Roadmap: project-management/roadmap.md
+      - Expansions: project-management/expansions.md
+      - Requested Insights Backlog: project-management/requested_insights.md
   - Platform:
-      - Apache Superset: platform/superset.md
-      - Grafana Logging: platform/grafana.md
-  - Data:
-      - Discord Gateway API: data/discord-gateway.md
+      - Apache Superset:
+          - Overview & DoD: platform/superset.md
+          - Style Guidelines: platform/superset-style-guidelines.md
+      - Design:
+          - Known Limitations: platform/design/limitations.md
+  - Data Sources:
+      - Discord Gateway API: data-sources/discord-gateway.md
+  - Dashboards:
+      - Final Dashboard Entries: dashboards/final-dashboard-docs-here.md
   - Templates & Checklists:
+      - Dashboard Feature Request: templates-and-checklists/dashboard-feature-request.md
       - Dashboard Documentation Template: templates-and-checklists/dashboard-template.md
       - Release Checklist: templates-and-checklists/release-checklist.md
 extra:
