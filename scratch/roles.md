@@ -4,7 +4,6 @@
 | --- | --- | --- | --- |
 | Business Owner (Project Manager) | Community lead | Prioritizes backlog, validates KPIs, approves releases. | Attends weekly review, signs off on dashboard intent and narrative. |
 | Analytics Engineer (M.S. BA & AI) | Graduate student | Designs data models, authors Superset content, maintains docs, automates checks. | Partners with Business Owner for acceptance criteria; coordinates with infra for data ingress. |
-| Contributors | Community members or contractors | Suggest insights, provide domain knowledge, report data issues. | Use templates and open issues/PRs referencing dashboard pages. |
 
 ## Communication
 - Discord server channels: #analytics-roadmap (planning), #analytics-support (issues), #analytics-releases (updates).

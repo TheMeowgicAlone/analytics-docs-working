@@ -16,12 +16,10 @@ nav:
   - Project Management:
       - Roles & Collaboration: project-management/roles.md
       - Dashboard Workflows: project-management/dashboard-workflows.md
-      - Roadmap: project-management/roadmap.md
-      - Expansions: project-management/expansions.md
-      - Requested Insights Backlog: project-management/requested_insights.md
+      - Overview: project-management/stakeholder-overview.md
   - Platform:
       - Apache Superset:
-          - Overview & DoD: platform/superset.md
+          - Overview & DoD: platform/superset-draft.md
           - Style Guidelines: platform/superset-style-guidelines.md
       - Design:
           - Known Limitations: platform/design/limitations.md
