@@ -1,8 +1,6 @@
 # Salt Free Gaming Analytics Documentation
 
-Welcome to the documentation hub for Salt Free Gaming (SFG), a Discord-centered community focused on Dota 2 and other titles. This site is under construction, and will be changed heavily as time goes.
-
-Consider all documents in DRAFT format.
+Welcome to the documentation hub for Salt Free Gaming (SFG), a Discord-centered community focused on Dota 2 and other titles. This site is actively maintained; updates iterate on a stable foundation rather than wholesale rewrites.
 
 ## Credits
 See [credits](credits.md) for contribution and design information.
@@ -22,4 +20,5 @@ See [credits](credits.md) for contribution and design information.
 
 ## Quick Links
 - [Discord Gateway API events](https://discord.com/developers/docs/topics/gateway-events)
-- [Apache Superset documentation](https://superset.apache.org/docs)
+- [Apache Superset documentation](https://superset.apache.org/docs/6.0.0/using-superset/creating-your-first-dashboard)
+- [Discord.py API Events Reference](https://discordpy.readthedocs.io/en/stable/api.html#discord-api-events)

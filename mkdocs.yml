@@ -14,12 +14,11 @@ nav:
   - Home: index.md
   - Credits: credits.md
   - Project Management:
-      - Roles & Collaboration: project-management/roles.md
       - Dashboard Workflows: project-management/dashboard-workflows.md
       - Overview: project-management/stakeholder-overview.md
   - Platform:
       - Apache Superset:
-          - Overview & DoD: platform/superset-draft.md
+          - Overview & DoD: platform/superset.md
           - Style Guidelines: platform/superset-style-guidelines.md
       - Design:
           - Known Limitations: platform/design/limitations.md

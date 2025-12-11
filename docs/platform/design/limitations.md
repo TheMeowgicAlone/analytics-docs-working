@@ -1,6 +1,6 @@
 # Platform Limitations
 
-Here we document large-scale and pervasive complicating factors, and other limitations which affect the entire system. Each one is given it's own section for clarity.
+Here we document large-scale and pervasive complicating factors, and other limitations which affect the entire system. Each one is given its own section for clarity.
 
 ## Attribution
 We will always struggle to connect identity to accounts.
@@ -16,12 +16,12 @@ We will always struggle to connect identity to accounts.
 - Connecting accounts to identities will be an ongoing task for the organization.
 - Dashboards should exist to help prioritize these efforts.
 
-### Takeways
+### Takeaways
 - A dashboard should be created to help focus these efforts.
-- Expect to work with low level account IDS more often than member IDS, because member IDS are unreliable.
+- Expect to work with low level account IDs more often than member IDs, because member IDs are unreliable.
 
 
-## No SLAS
+## No SLAs
 We are working with consumer grade APIs.
 
 ### Problem

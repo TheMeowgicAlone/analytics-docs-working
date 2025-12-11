@@ -60,11 +60,9 @@
 ### Scope
 
 1. **Discord Activity Foundations**
-
-   * Voice presence and sessions (time in voice, by member and channel).
-   * Text activity: messages by channel, thread, time-of-day.
-   * Simple engagement metrics:
-     * Active days, voice hours, channel diversity.
+   * Voice presence and sessions (time in voice by member and channel).
+   * Text activity: messages by channel, thread, and time-of-day.
+   * Engagement baselines: active days, voice hours, channel diversity.
 
 2. **Behavior-Based Cohorts (Discord-only)**
 
@@ -83,48 +81,31 @@
 3. **Discord Engagement Insights**
 
    * Heatmaps of when the server is alive (day/time).
-   * Member engagement trends:
-
-     * Who is ramping up vs cooling off.
-     * Which cohorts are growing/shrinking.
-
    * Early retention views:
 
      * Fresh members who “convert” into core cohorts.
      * Members whose activity has fallen off.
 
 4. **Pre-Churn Signals (Discord-only)**
-
-   * Simple signals like:
-
-     * Drop in active days / voice hours compared to personal baseline.
-     * Members who haven’t been seen in N days.
-   * No formal model yet; focus on surfacing candidate “at-risk” lists.
+   * Drops in active days or voice hours relative to personal baselines.
+   * Members unseen for N days; highlight candidate at-risk lists (no formal model yet).
+   * Special highlights on staff/contributors.
 
 5. **Funnel Rates**
+   * Long-term rates for going active, graduating to Club/Contributor, and lapsing from core segments.
 
-   * Long term rates of:
-     * Going active
-     * Core members going inactive
-     * 
-
-     * Drop in active days / voice hours compared to personal baseline.
-     * Members who haven’t been seen in N days.
-   * No formal model yet; focus on surfacing candidate “at-risk” lists.
-
-
-5. **Event Planning Insights**
-
-   * What time of day/day of week/etc that members are most active.
-   * Which members are most active, when (ie segregate by cohort).
+6. **Event Planning Insights**
+   * Time-of-day/day-of-week activity patterns.
+   * Most active members by cohort and time window to guide scheduling.
 
 **Outputs (high-level):**
 
-* A **Discord Activity & Health** dashboard.
-* A **Event Planning** dashboard.
-* A **Promotion Team Quick-view** dashboard, listing fresh members and recently inactive members.
-* A **Behavioral Cohorts** dashboard,
-* A **Risk / Inactivity Watchlist** view based on simple heuristics.
+- A **Discord Activity & Health** dashboard.
+- An **Event Planning** dashboard.
+- A **Promotion Team Quick-view** dashboard, listing fresh members and recently inactive members.
+- A **Behavioral Cohorts** dashboard.
+- A **Risk / Inactivity Watchlist** view based on simple heuristics.
+- A **Contributor / Staff Engagement Dashboard** which monitors which staff members are becoming less interested in the club.
 
 ---
 
