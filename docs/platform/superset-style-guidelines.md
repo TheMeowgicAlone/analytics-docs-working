@@ -46,8 +46,3 @@ Standards for building and shipping Superset dashboards at SFG. Use alongside th
 
 ### Charts
 - `<Metric>` by `<Dimension>` (`<Timeframe>`)
-
-## Naming, Labels, and Accessibility
-- Name charts as `SFG <Domain>: <Metric> (<grain>)`; include units and time zones (default UTC) in titles or subtitles.
-- Avoid game-specific jargon on shared dashboards; prefer plain language for non-technical readers.
-- Ensure contrast meets accessibility expectations; add redundant cues (color + label/shape) instead of color alone.
