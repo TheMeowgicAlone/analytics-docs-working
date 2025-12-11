@@ -22,3 +22,5 @@ See [credits](credits.md) for contribution and design information.
 - [Discord Gateway API events](https://discord.com/developers/docs/topics/gateway-events)
 - [Apache Superset documentation](https://superset.apache.org/docs/6.0.0/using-superset/creating-your-first-dashboard)
 - [Discord.py API Events Reference](https://discordpy.readthedocs.io/en/stable/api.html#discord-api-events)
+- [Visualization basics: W3C contrast guidance](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+- [Gestalt principles overview](https://en.wikipedia.org/wiki/Principles_of_grouping).
