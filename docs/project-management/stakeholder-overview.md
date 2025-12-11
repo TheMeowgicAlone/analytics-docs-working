@@ -132,7 +132,3 @@ Phased roadmap for SFG analytics workstreams. Use this to align stakeholders on 
     - Use this to prioritize which insights to refine or automate.
 
 ---
-
-## Summary
-
-This gives a clear, phased story to share with stakeholders and the student: start with **Dota analytics (Phase 1)**, layer in **Discord-only behavioral insights (Phase 2)**, and keep **events and platform analytics** clearly marked as future phases that are conceptually defined but currently blocked.
