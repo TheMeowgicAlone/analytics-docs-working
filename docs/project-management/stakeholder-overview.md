@@ -4,37 +4,55 @@ Phased roadmap for SFG analytics workstreams. Use this to align stakeholders on 
 
 ---
 
+## Phase 0 - Assessment, Plan updates.
+
+**Summary:** Evaluate and solidify roles & responsibilities, workflow, and update plans.
+
+1. **Learn Superset:** 
+    - Understand superset fundamentals, creating scratch dashboards & charts.
+
+2. **Assess Designs:** 
+    - Examine larger designs, consider what improves could be made, 
+    - Appraise planning time required.
+    - Adjust roadmap.
+
+3. **Build Workspace:** 
+    - Construct initial web documentation
+    - Refactor plans.
+    - Establish initial style guidelines.
+    - Establish documentation requirements.
+
+---
+
 ## Phase 1 - Dota Program Insights
 
-**Goal:** Start with intuitive, game-domain analytics. It's simpler and allows learning while still creating positive value.
+**Summary:** Start with intuitive, game-domain analytics. It's simpler and allows learning while still creating positive value.
 
-### Scope
+### Targets
 
-1. **Workflow establishment:** Nail down initial style guidelines, communication methods, and tooling.
-
-2. **Core Dota participation:**
+1. **Core Dota participation:**
     - Matches played by member and by league/ticket (match type).
     - Time-based views (last 14 days, 30 days, season-to-date).
 
-3. **Win rate and performance analytics:**
+2. **Win rate and performance analytics:**
     - Overall win rates per member, per team, and per captain.
     - Win rates by ticket/league, lineup, and side/position where available.
     - Outlier detection.
 
-4. **Captain insights:**
+3. **Captain insights:**
     - Overview to assist the promotion team in selecting skilled captains.
     - Re-evaluate methods for captain evaluation.
     - Simple captain comparison dashboards.
 
-5. **League health and insights:**
+4. **League health and insights:**
     - Descriptive statistics analyzing win rate deviation.
     - Matches played per ticket in the last month; retired tickets should be zero.
 
-6. **Steam / account health:**
+5. **Steam / account health:**
     - Unaccounted-for Steam accounts that need to be tracked down.
     - Smurf tracker listing members and multiple accounts.
 
-7. **Planning for Phase 2 data needs:**
+6. **Planning for Phase 2 data needs:**
     - Review overall design for Phase 2 and identify required data processing.
     - Determine what data processing must be done; Python engineers will implement it.
     - Confirm supporting information (Discord roles, etc.) is available.
@@ -52,9 +70,9 @@ Phased roadmap for SFG analytics workstreams. Use this to align stakeholders on 
 
 ## Phase 2 - Discord-Only Analytics & Behavioral Cohorts
 
-**Goal:** Use Discord activity alone to understand community health, segment members, and analyze overall community churn/retention.
+**Summary:** Use Discord activity alone to understand community health, segment members, and analyze overall community churn/retention.
 
-### Scope
+### Targets
 
 1. **Discord activity foundations:**
     - Voice presence and sessions (time in voice by member and channel).
@@ -112,7 +130,7 @@ Phased roadmap for SFG analytics workstreams. Use this to align stakeholders on 
 - Attendance and participation per event.
 - Event popularity (by type, time, host).
 - Member behavior around events (joining vs dropping off after events).
-- Early relationship between event participation and churn/retention.
+- Expanding on cohorts, now including cohorts based on event participation
 
 ---
 
