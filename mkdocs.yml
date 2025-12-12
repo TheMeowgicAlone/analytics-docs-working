@@ -21,8 +21,6 @@ nav:
           - Dota Taxonomy: project-management/data-entity-taxonomy/dota-taxonomy.md
       - Decision Briefs:
           - Inaccurate Account Calibration: project-management/decision-briefs/inaccurate-account-calibration.md
-  - Analytics Frameworks:
-      - Signal Catalog: analytics-frameworks/signal-catalog.md
   - Platform:
       - Apache Superset:
           - Software Details: platform/superset.md
