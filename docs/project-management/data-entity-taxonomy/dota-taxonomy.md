@@ -108,7 +108,8 @@ Extended profile for a Dota 2 player with rank, calibration flags, and provider 
 - **Rank data from providers:**
   - `leaderboard_dotabuff`, `leaderboard_stratz`, `leaderboard_opendota`: Leaderboard rank (nullable integers)
   - `rank_opendota`, `rank_stratz`, `rank_dotabuff`: Medal rank integers (Herald 1 = 11, Crusader 1 = 31, etc.)
-- **Privacy flags:** `is_private_dotabuff`, `is_private_opendota`, `is_private_stratz`
+- **Privacy flags:**
+  - `is_private_dotabuff`, `is_private_opendota`, `is_private_stratz`: Boolean flags
 - **Calibration & placement:**
   - `is_inaccurate_calibration`: Flag for unsuitable shuffle participation (boolean)
   - `is_inaccurate_listing`: Flag requiring careful drafting (boolean)
@@ -119,8 +120,8 @@ Extended profile for a Dota 2 player with rank, calibration flags, and provider 
   - `mmr_last_estimated`, `mmr_was_estimated`: Tracking for estimates
   - `actual_mmr`, `actual_mmr_last_updated`, `actual_mmr_was_verified`: Verified MMR data
 - **Provider metadata:**
-  - `region_*`: Region per provider (max 256 chars)
-  - `last_updated_*`: Last fetch timestamp per provider
+  - `region_opendota`, `region_stratz`, `region_dotabuff`: Region per provider (max 256 chars)
+  - `last_updated_opendota`, `last_updated_stratz`, `last_updated_dotabuff`: Last fetch timestamp per provider
 - `sz_smurf_flag`: Valve smurf detection flag (nullable boolean)
 
 **Relationships:**
