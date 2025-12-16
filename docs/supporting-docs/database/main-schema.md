@@ -149,7 +149,7 @@ A league, division, or event ticket defining a matchmaking context.
 
 ---
 
-### Inhouse Match Participation (`dota_official_event_matches`)
+### Official Match Records (`dota_official_event_matches`)
 A player-in-match record for official inhouse games.
 
 **Purpose:** Captures individual participation, role, and performance in a single match.  
@@ -177,10 +177,10 @@ A player-in-match record for official inhouse games.
 
 ---
 
-### Match Participation Overrides (`dota_official_event_matches_overrides`)
+### Match Info Overrides (`dota_official_event_matches_overrides`)
 Manual corrections or additions to match participation data.
 
-**Purpose:** Allows moderators to correct erroneous match data or add missing records.  
+**Purpose:** Allows league managers to correct erroneous match data or add missing records.  
 **Table:** `dota_official_event_matches_overrides`  
 **Primary Key:** `override_entry_id` (auto-increment)  
 **Unique Constraint:** `(steam_id, match_id)`  
@@ -189,7 +189,7 @@ Manual corrections or additions to match participation data.
 - `created_at`, `updated_at`: Timestamps for change tracking
 - `game_type`: Type of game (default "Dota", max 32 chars)
 
-**Analytics Use:** Data quality tracking, moderation workload, override frequency analysis.
+**Analytics Use:** Data quality tracking. 
 
 ---
 
@@ -270,32 +270,6 @@ Diagnostic views showing statistics at the Steam account level (not rolled up to
 
 ---
 
-## Audit & Moderation Entities
-
-### Command Audit (`command_audit`)
-Audit trail for privileged administrative commands.
-
-**Purpose:** Long-lived log of moderator and admin actions for accountability.  
-**Table:** `command_audit`  
-**Primary Key:** `entry_id` (auto-increment)  
-**Key Attributes:**
-- `exec_id`: UUID for grouping related operations
-- `command_name`: Command identifier (max 128 chars)
-- `component`: System component (max 64 chars, nullable)
-- `actor_type`, `actor_id`: Who executed the command
-- `actor_discord_user_id`: Discord user ID of actor (nullable)
-- `target_member_id`, `target_discord_user_id`, `target_resource`: Command targets
-- `args`, `kwargs`, `details`: JSONB command metadata
-- `status`: Enum (STARTED, SUCCESS, FAILED, SKIPPED, UNKNOWN)
-- `result`: Short result descriptor (max 64 chars)
-- `error`: Full error text if failed
-- `completed_at`, `expires_at`: Timestamps for lifecycle and retention
-
-**Indexes:** `command_name`, `actor_discord_user_id`, `expires_at`, `exec_id`  
-**Analytics Use:** Moderator activity tracking, command success rates, audit log retention, compliance reporting.
-
----
-
 ## Pivot & Utility Views
 
 ### Pivot View (`pivot_view`)
@@ -371,10 +345,3 @@ These entities support multiple decision-making workflows:
    - Correlate `sz_smurf_flag` with actual performance outliers
 
 ---
-
-## See Also
-
-- [Dashboard Workflows](../dashboard-workflows.md) – How to request and build dashboards using this taxonomy.
-- [Stakeholder Overview](../stakeholder-overview.md) – Phased roadmap aligning analytics with SFG program goals.
-- [Superset Style Guidelines](../../platform/superset-style-guidelines.md) – Visual and naming conventions for dashboards.
-- [Learning: Terms](../../learning/terms.md) – Analytics concepts and definitions.

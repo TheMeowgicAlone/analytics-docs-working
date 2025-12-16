@@ -25,6 +25,7 @@ nav:
   - Dashboards:
       - Dashboard docs go here...: dashboards/final-dashboard-docs-here.md
   - Supporting Docs:
-      - Main DB Schema Anatomy: project-management/database/main-schema.md
+      - Quickstart: supporting-docs/database/quickstart.md
+      - Application Schema Taxonomy: supporting-docs/database/main-schema.md
 extra:
   analytics_phase: "minimum"
