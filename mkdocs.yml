@@ -16,21 +16,15 @@ nav:
   - Project Management:
       - Dashboard Workflows: project-management/dashboard-workflows.md
       - Overview: project-management/stakeholder-overview.md
-      - Data Entity Taxonomy:
-          - Dota Taxonomy: project-management/data-entity-taxonomy/dota-taxonomy.md
       - Decision Briefs:
           - Inaccurate Account Calibration: project-management/decision-briefs/inaccurate-account-calibration.md
   - Platform:
       - Apache Superset:
           - Software Details: platform/superset.md
           - Style Guidelines: platform/superset-style-guidelines.md
-      - Design:
-          - Known Limitations: platform/design/limitations.md
   - Dashboards:
-      - Calibration Queue Dashboard: dashboards/calibration-queue-dashboard.md
       - Dashboard docs go here...: dashboards/final-dashboard-docs-here.md
-  - Templates & Checklists:
-      - Dashboard Request: templates-and-checklists/dashboard-request.md
-      - Dashboard Documentation Template: templates-and-checklists/dashboard-template.md
+  - Supporting Docs:
+      - Main DB Schema Anatomy: project-management/database/main-schema.md
 extra:
   analytics_phase: "minimum"
