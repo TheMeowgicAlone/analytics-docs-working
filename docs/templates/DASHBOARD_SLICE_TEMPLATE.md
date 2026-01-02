@@ -29,10 +29,5 @@ What is sorted first and why.
 
 ---
 
-## Design Principles
-Rules followed while building this dashboard.
-
----
-
 ## Known Risks
 Ways this dashboard could mislead if misused.
