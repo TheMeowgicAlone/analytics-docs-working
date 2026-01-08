@@ -17,6 +17,7 @@
 - Message behavior should only be considered if cost-effective.
 - People in call alone should not be considered.
 - Bot messages should be ignored.
+- A single member should only be counted for a bounce once (some members misuse the server and constantly rejoin and leave, and they should be excluded).
 
 ## Input Information (Suggested)
 - Messages sent daily.
