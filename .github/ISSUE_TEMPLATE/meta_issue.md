@@ -1,12 +1,17 @@
 ---
 name: Meta Issue
-about: Problems with the overall workflow, documentation, repo structure, etc.
+about:  Improvements to our workflow, documentation, repo organization, or processes
+labels: meta
 ---
 
-## Problem
+## What needs improvement? 
+<!-- Describe what's not working well or could be better -->
 
-## Relevant Documents
+## Why it matters
+<!-- Brief context on how this affects our work -->
 
-## Potential Actions
+## Suggested approach
+<!-- Optional:  Ideas for how to address this -->
 
-## Additional Info
+## Notes
+<!-- Any additional context, links, or references -->
