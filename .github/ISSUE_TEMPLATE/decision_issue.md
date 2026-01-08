@@ -3,14 +3,18 @@ name: Decision Analytics Work
 about: Create artifacts (signal design, dashboard) for a decision
 ---
 
+## Decision Context
+_Brief summary..._
+
 ## Decision
-Link decision brief: 
+_Link decision brief..._
 
 ## Tasks
 - [ ] Signal design doc
-- [ ] Evidence model doc
-- [ ] Dashboard slice
-- [ ] Retrospective
+- [ ] Operational Dashboard Spec exists
+- [ ] Dashboard is built in Superset
+- [ ] Iterations are considered.
+- [ ] Retrospective Exists, contains final notes, photos, etc.
+---
 
-## Outcome
-Describe decision support intended.
+## Notes
