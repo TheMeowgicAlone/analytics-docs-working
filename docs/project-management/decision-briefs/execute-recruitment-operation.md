@@ -15,7 +15,7 @@
 ## Guardrails
 - This should pull on a large enough window of time to not false positive.
 - We want to be VERY sure, because a tournament is extremely expensive.
-- Bounces need to be excluded (e.g. there is one member who has rejoined and left 7 times).
+- Bounces need to be excluded (a join and sudden leave should not count as a join)
 
 ## Input Information (Suggested)
 - join_date field for discord_users (or club_members if you want more future proof but less tied to specific user behavior).
