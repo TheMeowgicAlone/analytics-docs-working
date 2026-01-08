@@ -1,13 +1,12 @@
 ---
-name: Signal Design Subtask
+name: Meta Issue
+about: Problems with the overall workflow, documentation, repo structure, etc.
 ---
 
-## Purpose
-Draft candidate signals for {{ decision }}
+## Problem
 
-## Link
-Signal design doc path:
+## Relevant Documents
 
-## Done When
-- Candidate signals defined
-- Rejected signals justified
+## Potential Actions
+
+## Additional Info
