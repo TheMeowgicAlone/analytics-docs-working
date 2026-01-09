@@ -28,7 +28,7 @@ Dot - Player
 Filters/Segments : event(ticket), role, 
  (account / player / match / case / event / member)  
 **Primary time windows supported:**
-Initial pass: lifetime, 6months for segments 
+Initial pass: lifetime, Past Year
  <e.g., 7d / 30d / 60d / season>  
 **Eligibility rule (data sufficiency):** <minimum sample size or completeness required to interpret>
 At least 30 games played in lifetime, further segments require 10 games played minimum
@@ -65,10 +65,14 @@ The usage of the dashboard is to spot outliers, then go into details to determin
 
 ## 7) Information Architecture (Sections = Jobs-to-be-Done)
 Define sections by what the user is trying to do, not by chart type.
-Section 1: The user checks the dashboard section to spot extreme winrates with reference to games played.
-Section 1.3: The user is able to check the dashboard for more info on the likely inaccurately calibrated players (60% winrate and higher), also with their corresponding rank brackets and winrates.
-Section 2.1: The user is able to spot higher potential inaccurately calibrated players, with high overall winrates that accounts for role preference.
-Section 2.2: Chart similar to 1.3, no filter
+Section 1 Overall winrate by ticket:
+ The user checks the dashboard section to spot extreme winrates with reference to games played.
+Section 2- Lobby rank division winrates:
+ The user is able to check the dashboard for more info on the likely inaccurately calibrated players (60% winrate and higher), also with their corresponding rank brackets and winrates.
+Section 3- Role winrate: 
+The user is able to spot higher potential inaccurately calibrated players, with high overall winrates that accounts for roles played.
+
+
 
 ### Section A — Queue / Triage
 **Job-to-be-done:** “Who should we look at first?”  
@@ -100,10 +104,11 @@ Review detailed breakdown for overperforming players(i.e:overperforming in 2 rol
 60% winrate set as baseline winrate flag for further scrutiny, evidence for inaccurate rank calibration in winrate breakdowns
 **Required outputs (must display):**
 - Context fields needed to interpret metrics (always visible): <list>
+  Winrates (0-1 scale), Rank Division, TicketID,
   50% winrate is expected, 5% deviation is normal due to small sample size, above 60% winrate is uncommon at larger sample sizes 
 - **Diagnostic Cards** 
   Sample size(30) 
-  time window (6 months)
+  time window (1 year)
   45-55% winrate expected, ~1.25-1.5 winrate cumulative expected
 
 
@@ -113,6 +118,7 @@ Review detailed breakdown for overperforming players(i.e:overperforming in 2 rol
 
 ### Section C — Drilldown / Raw Records (Optional)
 **Job-to-be-done:** “Show me the underlying records quickly.”  
+Not required, for future review
 **Required outputs:** <table of events/matches/logs, etc.>  
 Include only if it materially reduces debate or back-and-forth.
 
@@ -121,20 +127,52 @@ Include only if it materially reduces debate or back-and-forth.
 ## 8) Diagnostic Card Specification (Reusable Contract)
 Each card is a standardized unit of evidence. Define 3–6 cards.
 Do not re-define the metric; reference the Signal Design.
+Overall Winrate - segmented by ticket ID(first pass)
+Overall Role Winrates
+Role Winrate(breakdown of above)
+Division Winrates
 
-### Diagnostic Card <#> — <Card Title>
-- **Metric / Signal reference:** <exact name from Signal Design>
-- **Question it answers:** <plain-language>
-- **Required segmentation (dimensions):** <role / bracket / cohort / etc.>
-- **Required comparison/baseline:** <expected value, prior period, peer group, etc.>
-- **Display form:** <single value / mini trend / distribution / breakdown>
-- **Decision states (interpretation rules):**
-  - **High concern:** <condition in words>
-  - **Normal:** <condition in words>
-  - **Inconclusive / insufficient data:** <condition in words>
-- **Common confounder (1 line):** <typical failure mode or caveat>
+
+### Diagnostic Card <#> — Overall Winrate by ticket
+- **Metric / Signal reference:** Overall winrate- first pass
+- **Question it answers:** Which players have higher than average winrates, is it due to games played or other factors?
+- **Required segmentation (dimensions):** By ticket, balanced shuffle or player draft
+- **Required comparison/baseline:** Expected value for winrates is 50%, with some deviation expected, allowance set at 10%. 
+- **Display form:**  Distribution of player winrates
+- **Decision states (interpretation rules):** Winrates- High enough for concern? > Games played- Attributed to games played? 
+  - **High concern:** Above 60% with more than 30 games
+  - **Low Concern:** Above 60% between 10-30 games
+  - **Normal:** 40-60% winrates
+  - **Inconclusive / insufficient data:** extreme winrates below 10 games
+- **Common confounder (1 line):** Caveat- for player draft winrates have higher deviations 
 - **Link-out (optional):** <raw examples / records>
 
+### Diagnostic Card <#> — Rank Divison Winrate
+- **Metric / Signal reference:** Lobby Division Winrate
+- **Question it answers:** What is the player's winrate in different rank divisions? Does this explain their winrates?
+- **Required segmentation (dimensions):** Rank Divison(bracket)
+- **Required comparison/baseline:** expected 50% with 10% deviations
+- **Display form:** Breakdown
+- **Decision states (interpretation rules):**
+  - **High concern:** Player has winrates consistently above 60% in all rank brackets, notably at brackets higher than their calibrated rank
+  - **Low concern:**Player has winrates below 40% consistently at lobbies near their calibrated rank, hinting overcalibrated rank
+  - **Normal:** Winrate between 40-60% across brackets, slightly higher at brackets below calibrated rank
+  - **Inconclusive / insufficient data:** Winrates with Rank divisions below 10 games automatically excluded
+- **Common confounder (1 line):** Players with extreme winrates and high calibrated rank(80) can be investigated seperately
+- **Link-out (optional):** <raw examples / records>
+
+### Diagnostic Card <#> — Role winrates
+- **Metric / Signal reference:** Role based winrates
+- **Question it answers:** Is a player's winrate attributed to a specific role? or is their performance high across roles?
+- **Required segmentation (dimensions):** Roles
+- **Required comparison/baseline:** Expected value between 40-60% for selected preferred role, lower for off-roles
+- **Display form:** Single value, Breakdown-winrate>roles
+- **Decision states (interpretation rules):**
+  - **High concern:** Overall Winrates above 60% across all roles, 1.6 for combined score
+  - **Low concern:** Overall Winrates around 50%, above 1.6 for combined score
+  - **Normal:** Winrates around 40-60%, 1.2-1.6 for combined score 
+  - **Inconclusive / insufficient data:** Only players with 3 roles played will be considered for combined score 
+- **Link-out (optional):** <raw examples / records>
 *(Repeat for each card.)*
 
 ---
@@ -142,47 +180,45 @@ Do not re-define the metric; reference the Signal Design.
 ## 9) Default State (Make It Useful on Open)
 Defaults should match the most common operational review session.
 
-- **Default time window:** <e.g., last 60d>
-- **Default filters:** <minimal set>
-- **Eligibility gating:** <what appears by default and why>
-- **Default sort / ranking:** <field + direction + short rationale>
-- **Default list size:** <e.g., top 50>
-- **Empty and low-data behavior:** <what the user sees and how to interpret it>
+- **Default time window:**  1 Year, due to 30 game requirement
+- **Default filters:** steam name exists, rank exists 
+- **Eligibility gating:** Games played >10 for segmented, 30 for overall 
+- **Default sort / ranking:** not applicable to current charts, breakdown possible
+- **Default list size:** All players
+- **Empty and low-data behavior:**
+ low or empty data will result in missing plots, interpreted as not enough games played in a segment for accurate results
 
 ---
 
 ## 10) Interaction Model (Keep It Simple)
-**Primary navigation:** Queue row → Evidence Panel  
+**Primary navigation:** Top to bottom, First pass, select Player(if exists) from filter list for breakdown
 **Secondary interactions (optional):**
-- filter chips / dropdowns (minimal)
-- tooltips linking to glossary definitions
-- export/share link
-Avoid multi-step flows; this is a dashboard, not an application workflow.
 
 ---
 
 ## 11) Data Requirements (Operational Reality)
-- **Data sources:** <tables/views/events>
-- **Refresh frequency:** <hourly/daily/near-real-time>
-- **Expected latency:** <e.g., up to 24h behind>
+- **Data sources:** Match data from stratz API>uploaded to database
+- **Refresh frequency:** daily
+- **Expected latency:** daily
 - **Data quality checks (must pass to trust outputs):**
-  - <check 1>
-  - <check 2>
+  - <check>
 - **Degraded mode:** <what happens if checks fail (banner, disable ranking, etc.)>
 https://github.com/saltfreegaming/analytics-docs/pulse
 ---
 
 ## 12) Caveats & Guardrails (Prevent Misinterpretation)
 - **Not valid for:**  
-  - <1–3 bullets: conclusions that should not be drawn>
+  -Not valid for in depth review
+  -Player performance review 
 - **Best used for:**  
-  - <1–3 bullets: intended use>
+  -Intended usage is as a early warning for potential inaccurate calibration 
+  -Spotting outliers that can affect event health
 - **Human review required when:**  
-  - <1–3 bullets: where judgment is needed>
+  -Outliers spotted within otherwise acceptable ranges, mentioned in role winrate above.
 - **Mandatory UI cues:**  
-  - sample size always visible  
-  - eligibility / insufficient-data states explicit  
-  - baseline/expected value shown when relevant
+  - Referenced where required- rank rating when rank used  
+  - Eligiblity stated- 10 games segmented, 30 games total
+  - Baseline consistent across all charts
 
 ---
 
