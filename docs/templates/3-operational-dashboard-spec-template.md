@@ -1,6 +1,5 @@
-# Set to New File name: Operational Dashboard Spec — <Slice Name>
+# Operational Dashboard Spec
 
-## 1) Deliverable (What This Slice Produces)
 One sentence describing the concrete output (e.g., “a ranked review queue plus an entity-level evidence panel”).
 
 ---

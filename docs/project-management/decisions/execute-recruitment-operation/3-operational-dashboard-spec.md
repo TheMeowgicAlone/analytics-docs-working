@@ -1,4 +1,4 @@
-# Set to New File name: Operational Dashboard Spec — <Slice Name>
+# Operational Dashboard Spec
 
 ## 1) Deliverable (What This Slice Produces)
 
