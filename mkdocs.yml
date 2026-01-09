@@ -12,20 +12,31 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - Credits: credits.md
   - Project Management:
-      - Dashboard Workflows: project-management/dashboard-workflows.md
-      - Overview: project-management/stakeholder-overview.md
-      - Decision Briefs:
-          - Inaccurate Account Calibration: project-management/decision-briefs/inaccurate-account-calibration.md
+      - Stakeholder Overview: project-management/stakeholder-overview.md
+      - Decisions:
+          - Execute Recruitment Operation:
+              - Decision Brief: project-management/decisions/execute-recruitment-operation/1-decision-brief.md
+              - Signal Designs: project-management/decisions/execute-recruitment-operation/2-signal-designs.md
+              - Dashboard Spec: project-management/decisions/execute-recruitment-operation/3-operational-dashboard-spec.md
+          - Improve Conversion Pipeline:
+              - Decision Brief: project-management/decisions/improve-conversion-pipeline/1-decision-brief.md
+          - Inaccurate Account Calibration:
+              - Decision Brief: project-management/decisions/inaccurate-account-calibration/1-decision-brief.md
+  - Dashboards:
+      - In Progress: dashboards/in-progress.md
   - Platform:
       - Apache Superset:
           - Software Details: platform/superset.md
           - Style Guidelines: platform/superset-style-guidelines.md
-  - Dashboards:
-      - Dashboard docs go here...: dashboards/final-dashboard-docs-here.md
   - Supporting Docs:
-      - Quickstart: supporting-docs/database/quickstart.md
-      - Application Schema Taxonomy: supporting-docs/database/main-schema.md
+      - Database:
+          - Quickstart: supporting-docs/database/quickstart.md
+          - Schema Reference: supporting-docs/database/main-schema.md
+  - Templates:
+      - Signal Design: templates/2-signal-design-template.md
+      - Dashboard Spec: templates/3-operational-dashboard-spec-template.md
+      - Retrospective: templates/4-retrospective-template.md
+  - Credits: credits.md
 extra:
   analytics_phase: "minimum"
