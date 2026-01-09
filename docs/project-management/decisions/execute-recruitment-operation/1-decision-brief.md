@@ -1,4 +1,4 @@
-# Execute Recruitment Operation
+# Decision Brief: Execute Recruitment Operation
 
 - **Owner:** Promotion Team
 - **Cadence:** Monthly

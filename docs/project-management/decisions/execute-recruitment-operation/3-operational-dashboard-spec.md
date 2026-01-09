@@ -1,4 +1,4 @@
-# Operational Dashboard Spec
+# Operational Dashboard Spec: Execute Recruitment Operation
 
 ## 1) Deliverable (What This Slice Produces)
 

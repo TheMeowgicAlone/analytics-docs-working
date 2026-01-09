@@ -1,4 +1,4 @@
-# Signal Design – <Decision Name>
+# Signal Design: Execute Recruitment Operation
 Player winrates by lobby's rank average
 
 ## Decision
