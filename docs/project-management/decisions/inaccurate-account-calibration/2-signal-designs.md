@@ -25,7 +25,7 @@ https://saltfreegaming.github.io/analytics-docs/project-management/decision-brie
 
 ## Selected Signals
 
-### <Division Winrate>
+### Division Winrate
 Why this signal was selected:
 This signal was selected as it allows us to reference the spread of lobbies that the player is participating in, as we have the player's calibrated rank.  
 The winrates should be centered around 50% for balanced shuffled lobbies
@@ -35,7 +35,7 @@ This signal would allow us to capture the effect of the lobby's average rank par
 
 While winrate by ticket allows us to capture the event's winrate, it does not account for the particpants of the lobby and role makeup.
 
-### <Role winrate>
+### Role winrate
 Why this signal was selected:
 Segmenting the player's winrate to control for variation introduced by role difference, a player hovering at 50% winrate could be a result of having to off-role. 
 Also showing the makeup of a player's winrate total
@@ -43,7 +43,7 @@ Also showing the makeup of a player's winrate total
 What it captures that others do not:
 Role based winrates being lopsided for specific roles (inaccurate rank calibration)
 
-### <Overall Role winrate>
+### Overall Role winrate
 Why this signal was selected:
 This signal shows a player's overall winrate against the sum of winrates. Thus providing an obvious signal for outlier performance (winrate above 50%, AND high role winrates above 50%) 
 Used with role winrate for detailed breakdown
