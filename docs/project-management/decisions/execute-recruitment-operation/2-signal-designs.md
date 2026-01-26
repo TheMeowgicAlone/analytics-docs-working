@@ -55,6 +55,14 @@ What it captures that others do not:
 The total number of the poulation that is sitting in a particular role/cohort helps to contextualise the growth in the server and where they are ending up
 Shows the overall health of the new server population
 
+### Role promotion history (week/month)
+Why this signal was selected: 
+This allows us to see how many members have been promoted in the past months/weeks. When there has been no promotions for a month, it could be a sign that the existing population of new players are not returning. 
+
+What it captures that others do not:
+Capturing the current intake of fresh members, as well as the new member population that is entering the fresh member territory
+Sign to not promote too many too quickly, as well as when there is no promotions happening
+
 
 
 ---
