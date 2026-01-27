@@ -18,7 +18,7 @@ New member participation (Related to conversion pipeline)
 ## Candidate Signals
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Server population delta | Weekly/Monthly difference for server population | Server x time | Server population and growth used as a information metric  |
+| Server population delta | Weekly/Monthly difference for server population | Server x time | Server population and growth used as a information metric (KPI - Server growth) |
 | Server total population | Server population | Server x time | Does not inform the decision (used with above) |
 | Server Growth % | New population in server population % over past months | Server x time  | Does not inform the decision (used with above) | 
 | Server joins (week/month) | Server joins | Server x time | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
@@ -30,9 +30,9 @@ New member participation (Related to conversion pipeline)
 | Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth, if there has been no promotions in a period, recruitment operation might be required | 
 | New member Role Age | Age of new member | server x role x age | Age of new members also shows how many new members stayed there, if many new members are old, recruitment operation might be required |
 | Fresh member Role Age | Age of fresh member | server x role x age | Same as above, but to signal if there is no requirement for recruitment operation |
-| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x time | Does not inform decision (information metric) | 
-| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity,  Does not inform the decision (information metric)  | 
-| Channel joins (day/week) | User joined channel | server x channel | total channel joins,  Does not inform the decision (information metric)  | 
+| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x time |  Tracking growth and conversion, Does not inform decision (information metric- KPI -Server growth) | 
+| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity,  Does not inform the decision (information metric - KPI -Server growth) | 
+| Channel joins (day/week) | User channel joins and where | server x channel | Representation of activity, Total channel joins and location,  Does not inform the decision (information metric)  | 
 | New User messages  | new user messages | server x population + age x messages | Number of messages sent by new users, if there has been no new user messages, signal that a recruitment operation might be required | 
 | new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact,if there has been no new user interaction, signal that a recruitment operation might be required | 
 | New user Message breakdown | Messages and where they were sent | server x population + age x messages | Messages and which channels new people interact in, Does not inform the decision (information metric) | 
