@@ -10,11 +10,8 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
 | Server population delta | Weekly difference for server population | Server x Population | Increase/Drops in server population must be noted |
-
 | Server total population | Server population | Server x Population | Total numbers (used with delta) | 
-
 | Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers) | 
-
 | Server Growth % | New population in server population % | Server x population  | Records new server population | 
 |------|-----------|-------|------------------|
 
