@@ -9,23 +9,24 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 ## Candidate Signals
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Server population delta | Weekly difference for server population | Server x Population | Does not inform the decision |
-| Server total population | Server population | Server x Population | Does not inform the decision |
-| Server Growth % | New population in server population % | Server x population  | Does not inform the decision | 
+| Server population delta | Weekly difference for server population | Server x time | Server population and growth used as a information metric  |
+| Server total population | Server population | Server x time | Does not inform the decision |
+| Server Growth % | New population in server population % over past months | Server x time  | Does not inform the decision (used with above) | 
 | Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
-|------|-----------|-------|------------------|
 
+
+| Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Role population | Role population | server x population | Number of users in a particular role, new =/= promoted  | 
-| Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth | 
-| New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there | 
-| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x population | Cohorts of the recent months of members | 
-| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity | 
-| Channel joins (day/week) | User joined channel | server x population | total channel joins | 
-| New User messages  | new user messages | server x population + age x messages | Number of messages sent by new users | 
-| new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact? | 
-| Message quantity | Messages and where they were sent | server x channel | Messages and which channels people interact in | 
-|------|-----------|-------|------------------|
+| Role population | Role population | server x population | Does not inform decision (information metric) | 
+| Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth, if there has been no promotions in a period, recruitment operation might be required | 
+| New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there, if many new members are old, recruitment operation might be required |
+| Fresh member Role Age | Age of fresh member | server x population / role | Same as above, but to signal if there is no requirement for recruitment operation |
+| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x time | Does not inform decision (information metric) | 
+| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity,  Does not inform the decision (information metric)  | 
+| Channel joins (day/week) | User joined channel | server x channel | total channel joins,  Does not inform the decision (information metric)  | 
+| New User messages  | new user messages | server x population + age x messages | Number of messages sent by new users, if there has been no new user messages, signal that a recruitment operation might be required | 
+| new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact,if there has been no new user interaction, signal that a recruitment operation might be required | 
+| New user Message breakdown | Messages and where they were sent | server x population + age x messages | Messages and which channels new people interact in, Does not inform the decision (information metric) | 
 
 
 ---
@@ -36,7 +37,6 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 Why this signal was selected:
 This signal shows the amount of new population entering the server
 This captures server growth in its base form, required to contextualise population growth
-
 What it captures that others do not:
 -base form- 
 
@@ -70,9 +70,9 @@ Inaccurate representation of server health
 
 
 ### Rejected (unrelated)
-| Server Interaction/Engagement | Population in server that interacts with events quantified | server x population x event participation | engagement directly affects server health | 
-| Server Inactivity % | Population in server that is inactive | server x population x duration | checking inactivity duration > outreach health, engagement health | 
-| Active Population % | Population with active participation | server x population x duration | engagement and retention health | 
+| Server Interaction/Engagement | Population in server that interacts with events quantified | server x population x event participation | engagement directly affects server health, low engagement can be addressed by recruitment | 
+| Server Inactivity % | Population in server that is inactive | server x population x duration | checking inactivity duration > outreach health, engagement health, does not inform decision(unrelated) | 
+| Active Population % | Population with active participation | server x population x duration | engagement and retention health, does not inform decision(information metric) | 
 
 Why these signals was rejected:
 Unrelated for recruitment operation
@@ -89,14 +89,12 @@ Inverse of server engagement, effectively capturing "dead" population
 
 ## Guardrails
 Explicit constraints applied:
--
-- Required context : 
-- Known exclusions 
+- Recruitment operation should not be carried out if there is sufficent organic growth, additionally, relating to conversion, if there is enough conversion but low organic growth, do not carry out recruitment operation
+- Hence: if new members below x amount(Signal to carry out recruitment), but fresh member above x amount (Good conversion amount), do not carry out recruitment
+- Required context : New members are not necessarily converted to a fresh member, as a means to an end, a recruitment operation is aimed to recruit members which will remain and participate in the server, numbers to be tuned according to server population size
 
 ---
 
-## Known Limitations
-What this **cannot** reliably detect.
 
 
 
