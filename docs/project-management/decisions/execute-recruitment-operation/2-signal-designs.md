@@ -4,13 +4,22 @@
 What decision does this signal design support?
 Execute recruitment operations
 https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/decisions/execute-recruitment-operation/1-decision-brief.md
+
+The key performance indicators for the recruitment portion are as follows:
+
+New member amount
+
+New members that are converted known as fresh members
+
+New member participation (Related to conversion pipeline)
+
 ---
 
 ## Candidate Signals
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Server population delta | Weekly difference for server population | Server x time | Server population and growth used as a information metric  |
-| Server total population | Server population | Server x time | Does not inform the decision |
+| Server population delta | Weekly/Monthly difference for server population | Server x time | Server population and growth used as a information metric  |
+| Server total population | Server population | Server x time | Does not inform the decision (used with above) |
 | Server Growth % | New population in server population % over past months | Server x time  | Does not inform the decision (used with above) | 
 | Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
 
@@ -70,6 +79,8 @@ Inaccurate representation of server health
 
 
 ### Rejected (unrelated)
+| Signal | Definition | Grain | Why It Might Help |
+|------|-----------|-------|------------------|
 | Server Interaction/Engagement | Population in server that interacts with events quantified | server x population x event participation | engagement directly affects server health, low engagement can be addressed by recruitment | 
 | Server Inactivity % | Population in server that is inactive | server x population x duration | checking inactivity duration > outreach health, engagement health, does not inform decision(unrelated) | 
 | Active Population % | Population with active participation | server x population x duration | engagement and retention health, does not inform decision(information metric) | 
