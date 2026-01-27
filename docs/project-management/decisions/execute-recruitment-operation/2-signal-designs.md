@@ -21,15 +21,15 @@ New member participation (Related to conversion pipeline)
 | Server population delta | Weekly/Monthly difference for server population | Server x time | Server population and growth used as a information metric  |
 | Server total population | Server population | Server x time | Does not inform the decision (used with above) |
 | Server Growth % | New population in server population % over past months | Server x time  | Does not inform the decision (used with above) | 
-| Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
+| Server joins (week/month) | Server joins | Server x time | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
 
 
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Role population | Role population | server x population | Does not inform decision (information metric) | 
+| Role population | Role population | server x role | Does not inform decision (information metric) | 
 | Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth, if there has been no promotions in a period, recruitment operation might be required | 
-| New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there, if many new members are old, recruitment operation might be required |
-| Fresh member Role Age | Age of fresh member | server x population / role | Same as above, but to signal if there is no requirement for recruitment operation |
+| New member Role Age | Age of new member | server x role x age | Age of new members also shows how many new members stayed there, if many new members are old, recruitment operation might be required |
+| Fresh member Role Age | Age of fresh member | server x role x age | Same as above, but to signal if there is no requirement for recruitment operation |
 | Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x time | Does not inform decision (information metric) | 
 | Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity,  Does not inform the decision (information metric)  | 
 | Channel joins (day/week) | User joined channel | server x channel | total channel joins,  Does not inform the decision (information metric)  | 
