@@ -13,6 +13,15 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 | Server total population | Server population | Server x Population | Total numbers (used with delta) | 
 | Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers) | 
 | Server Growth % | New population in server population % | Server x population  | Records new server population | 
+| Role population | Role population | server x population | Number of users in a particular role, new =/= promoted  | 
+| Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth | 
+| New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there | 
+| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x population | Cohorts of the recent months of members | 
+| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity | 
+| Channel joins (day/week) | User joined channel | server x population | total channel joins | 
+| New User messages  | new user messages | server x population + age x messages | Number of messages sent by new users | 
+| new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact? | 
+| Message quantity | Messages and where they were sent | server x channel | Messages and which channels people interact in | 
 |------|-----------|-------|------------------|
 
 
@@ -22,21 +31,16 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 
 
 ### Roles(Discord)
-| Role population | Role population | server x population | Number of users in a particular role, new =/= promoted  | 
-| Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth | 
-| New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there | 
-| Cohort population (Quarterly/ Biannual) | Population of cohorts | Server x population | Cohorts of the recent months of members | 
+
 
 ### Channels
-| Channel voice hours/minutes | Voice hours per day | Server x channel x time | Representation of activity | 
-| Channel joins (day/week) | User joined channel | server x population | total channel joins | 
+
 
 ### New user activity
-| New User messages  | new user messages | server x population + age x messages | Number of messages sent by new users | 
-| new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact? | 
+
 
 ### Messages
-| Message quantity | Messages and where they were sent | server x channel | Messages and which channels people interact in | 
+
 
 ---
 
