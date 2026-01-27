@@ -9,10 +9,13 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 ## Candidate Signals
 | Signal | Definition | Grain | Why It Might Help |
 |------|-----------|-------|------------------|
-| Server population delta | Weekly difference for server population | Server x Population | Increase/Drops in server population must be noted |
-| Server total population | Server population | Server x Population | Total numbers (used with delta) | 
-| Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers) | 
-| Server Growth % | New population in server population % | Server x population  | Records new server population | 
+| Server population delta | Weekly difference for server population | Server x Population | Does not inform the decision |
+| Server total population | Server population | Server x Population | Does not inform the decision |
+| Server Growth % | New population in server population % | Server x population  | Does not inform the decision | 
+| Server joins (week/month) | Server joins | Server x population | New user joins (raw numbers), required to be tracked, if server joins do not meet a certain number, recruitment operation might be required | 
+|------|-----------|-------|------------------|
+
+|------|-----------|-------|------------------|
 | Role population | Role population | server x population | Number of users in a particular role, new =/= promoted  | 
 | Role promotion history | Role promotion over time | server x roles x time | new members role assignment + club member role assignment, promotions help to identify club member growth | 
 | New member Role Age | Age of new member | server x population / role | Age of new members also shows how many new members stayed there | 
@@ -23,23 +26,6 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 | new user activity % | new user messages/joins channel (yes/no) | server x population + age x messages | Did a new user interact? | 
 | Message quantity | Messages and where they were sent | server x channel | Messages and which channels people interact in | 
 |------|-----------|-------|------------------|
-
-
-
-### Population
-
-
-
-### Roles(Discord)
-
-
-### Channels
-
-
-### New user activity
-
-
-### Messages
 
 
 ---
