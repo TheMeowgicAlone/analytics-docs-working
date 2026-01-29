@@ -23,18 +23,16 @@ https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-manageme
 ---
 
 ## Selected Signals
-### Server joins
-Why this signal was selected:
-What it captures that others do not:
-
-
 ---
+Why this signal was selected:
+
+What it captures that others do not:
 
 ## Rejected Signals
 Why it was rejected:
+
 What risk or failure mode it introduces:
 
----
 
 ## Guardrails
 Explicit constraints applied:
