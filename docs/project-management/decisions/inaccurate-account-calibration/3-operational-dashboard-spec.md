@@ -18,20 +18,26 @@ The dashboard shows an overall view of a player level performance, indicated by 
 ## 3) Scope
 **In scope:** <what this dashboard slice covers operationally>  
 This dashboard covers the initial signals of an inaccurate player rank calibration
+
 **Out of scope (Non-goals):** <explicit exclusions to prevent scope creep>
 The dashboard only covers winrate based signals, other indicators of player performance breakdown will be included in a future dashboard
+
 ---
 
 ## 4) Unit of Analysis (Grain)
 **One row/item represents:**
 Dot - Player
-Filters/Segments : event(ticket), role, 
- (account / player / match / case / event / member)  
+Filters/Segments : 
+event(ticket)
+role (account / player / match / case / event / member)  
+
 **Primary time windows supported:**
 Initial pass: lifetime, Past Year
  <e.g., 7d / 30d / 60d / season>  
+ 
 **Eligibility rule (data sufficiency):** <minimum sample size or completeness required to interpret>
 At least 30 games played in lifetime, further segments require 10 games played minimum
+
 ---
 
 ## 5) Acceptance Criteria (Dashboard-Level)
@@ -61,6 +67,7 @@ Default for operational workflows is **Queue → Details**.
 
 **Why this pattern fits the workflow:** <1–2 sentences, no metrics>
 The usage of the dashboard is to spot outliers, then go into details to determine course of action
+
 ---
 
 ## 7) Information Architecture (Sections = Jobs-to-be-Done)
