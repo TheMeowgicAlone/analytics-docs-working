@@ -9,9 +9,7 @@ The key performance indicators for the recruitment portion are as follows:
 
 New member amount
 
-New members that are converted known as fresh members
-
-New member participation (Related to conversion pipeline)
+Fresh members count(14 days or below)
 
 ---
 
