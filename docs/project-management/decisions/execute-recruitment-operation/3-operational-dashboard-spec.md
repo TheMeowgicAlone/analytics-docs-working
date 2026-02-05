@@ -7,7 +7,7 @@ The dashboard shows an overall view of a player level performance, indicated by 
 ---
 
 ## 2) Source of Truth (Do Not Re-define Here)
-- Decision Brief: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/decision-briefs/inaccurate-account-calibration.md
+- Decision Brief: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/decisions/execute-recruitment-operation/1-decision-brief.md
 - Signal Design / Metric Definitions: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/Decision/SIGNAL_DESIGNS.md
 - Glossary (optional): -
 
