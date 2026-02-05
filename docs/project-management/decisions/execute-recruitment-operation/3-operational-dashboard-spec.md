@@ -8,7 +8,7 @@ The dashboard shows an overall view of a player level performance, indicated by 
 
 ## 2) Source of Truth (Do Not Re-define Here)
 - Decision Brief: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/decisions/execute-recruitment-operation/1-decision-brief.md
-- Signal Design / Metric Definitions: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/Decision/SIGNAL_DESIGNS.md
+- Signal Design / Metric Definitions: https://github.com/saltfreegaming/analytics-docs/blob/main/docs/project-management/decisions/execute-recruitment-operation/2-signal-designs.md
 - Glossary (optional): -
 
 **This document is the final build blueprint:** layout, default state, interaction model, caveats/guardrails, and acceptance criteria.
