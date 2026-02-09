@@ -47,24 +47,6 @@ This captures server growth in its base form, required to contextualise populati
 What it captures that others do not:
 -base form- 
 
-### Role population / cohort population
-Why this signal was selected: 
-This describes the server population with relation to their role/cohorts, directly showing the number of new server joins in the past months, as well as the population that stayed as new members, promoted to fresh members, and promoted to club members. As well as the inactive population for longer periods of time.
-
-What it captures that others do not:
-The total number of the poulation that is sitting in a particular role/cohort helps to contextualise the growth in the server and where they are ending up
-Shows the overall health of the new server population
-
-### Role promotion history (week/month)
-Why this signal was selected: 
-This allows us to see how many members have been promoted in the past months/weeks. When there has been no promotions for a month, it could be a sign that the existing population of new players are not returning. 
-
-What it captures that others do not:
-Capturing the current intake of fresh members, as well as the new member population that is entering the fresh member territory
-Sign to not promote too many too quickly, as well as when there is no promotions happening
-
-
-
 ---
 
 ## Rejected Signals
@@ -94,13 +76,22 @@ Additionally, active/inactive time can also be quantified for the server populat
 What it captures that others do not:
 Inverse of server engagement, effectively capturing "dead" population
 
+### Role population / cohort population
+Why this signal was selected: 
+This describes the server population with relation to their role/cohorts, directly showing the number of new server joins in the past months, as well as the population that stayed as new members, promoted to fresh members, and promoted to club members. As well as the inactive population for longer periods of time.
+
+What it captures that others do not:
+The total number of the poulation that is sitting in a particular role/cohort helps to contextualise the growth in the server and where they are ending up
+Shows the overall health of the new server population
+
+
 ---
 
 ## Guardrails
 Explicit constraints applied:
 - Recruitment operation should not be carried out if there is sufficent organic growth, additionally, relating to conversion, if there is enough conversion but low organic growth, do not carry out recruitment operation
-- Hence: if new members below x amount(Signal to carry out recruitment), but fresh member above x amount (Good conversion amount), do not carry out recruitment
-- Required context : New members are not necessarily converted to a fresh member, as a means to an end, a recruitment operation is aimed to recruit members which will remain and participate in the server, numbers to be tuned according to server population size
+- Hence: if fresh members below x amount(Signal to carry out recruitment), but recent club member above x amount (Many recent promotions), do not carry out recruitment
+- Required context : New members are not necessarily converted to a club member, as a means to an end, a recruitment operation is aimed to recruit members which will remain and participate in the server, numbers to be tuned according to server population size
 
 ---
 
